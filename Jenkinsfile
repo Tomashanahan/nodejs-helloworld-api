@@ -4,6 +4,7 @@ pipeline {
         stage('Installing dependencies') {
             steps {
                 sh 'npm install'
+                echo 'node --version'
                 echo 'Installing dependencies..'
             }
         }
