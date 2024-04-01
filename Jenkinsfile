@@ -4,7 +4,7 @@ pipeline {
         stage('Installing dependencies') {
             steps {
                 // sh 'npm install'
-                sh '/home/jenkins/.nvm/versions/node/<version>/bin/npm install'
+                sh '/var/lib/jenkins/.nvm/versions/node/v20.11.0/bin/npm install'
                 echo 'Installing dependencies..'
             }
         }
