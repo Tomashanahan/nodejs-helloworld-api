@@ -6,14 +6,14 @@ pipeline {
     stages {
         stage('Installing dependencies') {
             steps {
-                sh 'npm install'
                 echo '📦 Installing dependencies.. 📦'
+                sh 'npm install'
             }
         }
         stage('Test') {
             steps {
-                sh 'npm test'
                 echo '🧪 Testing.. 🧪'
+                sh 'npm test'
             }
         }
     }
